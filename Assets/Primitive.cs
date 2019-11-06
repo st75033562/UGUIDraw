@@ -14,10 +14,10 @@ public class Primitive : MaskableGraphic
             UIVertex uiVertices = new UIVertex();
             uiVertices.color = color;
             uiVertices.position = postion[i];
-            vh.AddVert(uiVertices);
+            vh.AddVert(uiVertices); //添加顶点
         }
 
-        vh.AddTriangle(vCount, vCount + 1, vCount + 2);
-        vh.AddTriangle(vCount + 2, vCount + 3, vCount);
+        vh.AddTriangle(vCount, vCount + 1, vCount + 2);  //依据顶点组合三角形
+        vh.AddTriangle(vCount + 2, vCount + 3, vCount);  
     }
 }
